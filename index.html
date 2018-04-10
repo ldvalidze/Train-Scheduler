@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <br>
+    
+        <!-- Jumbotron Title -->
+        <div class="jumbotron">
+          <h1 class="text-center">Train Scheduler</h1>
+        </div>
+    
+        <!-- Current Schedule -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title"><strong>Current Train Schedule</strong></h2>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                    <div class="col-sm-2">
+                        <div id="nameDisplay"></div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div id="destinationDisplay"></div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div id="frequencyDisplay"></div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div id="nextDisplay"></div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div id="minutesAwayDisplay"></div>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Your Input -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2 class="panel-title"><strong>Add Train</strong></h2>
+              </div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="train-name">Train Name</label>
+                    <input class="form-control" id="Train-name" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="train-destination">Your destination</label>
+                    <input class="form-control" id="train-destination" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="train-destination">First Train Time (HH:mm military time)</label>
+                    <input class="form-control" id="train-destination" type="time">
+                  </div>
+                  <div class="form-group">
+                    <label for="train-destination">Friquency (min)</label>
+                    <input class="form-control" id="train-destination" type="number">
+                  </div>
+                  <button class="btn btn-primary" id="submit-train" type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+</body>
